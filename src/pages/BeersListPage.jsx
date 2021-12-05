@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Search from '../components/Search'
+import Search from '../components/Search';
 import Header from '../components/Header';
 
 export default function BeersListPage() {
@@ -20,7 +20,7 @@ export default function BeersListPage() {
   }, []);
 
   function filterBeer(string) {
-    if (beers.name === "") {
+    if (beers.name === '') {
       setFilteredBeer(beers);
     } else {
       setFilteredBeer(
